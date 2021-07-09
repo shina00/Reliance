@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "version": "4.1.0",
+  "id": "1c07cd26-a088-4db8-8928-ace382fa219f",
+  "packageName": "com.microsoft.teams.companycommunicator.authors",
+   "developer": {
+    "name": "Reliance Infosystems",
+    "websiteUrl": "https://www.reliance.systems/",
+    "privacyUrl": "https://www.reliance.systems/privacy/",
+    "termsOfUseUrl": "https://www.reliance.systems/privacy/"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Company Communicator (Authors)",
+    "full": "Company Communicator (Authors)"
+  },
+  "description": {
+    "short": "Broadcast messages to multiple teams and people in one go",
+    "full": "Broadcasts messages to multiple teams and individuals through channel posts and chat messages"
+  },
+  "accentColor": "#64A2CC",
+  "configurableTabs": [{
+    "configurationUrl": "https://reliancecompanycommunicator.azurefd.net/configtab",
+    "canUpdateConfiguration": true,
+    "scopes": [
+       "personal",
+      "team"
+    ]
+  }],
+  "bots": [{
+    "botId": "ed39b786-d1c4-472c-8b6f-dff97e68dff2",
+    "scopes": [
+      "team"
+    ],
+    "supportsFiles": true,
+    "isNotificationOnly": true
+  }],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "<<appDomain>>"
+  ],
+  "webApplicationInfo": {
+    "id": "ed39b786-d1c4-472c-8b6f-dff97e68dff2",
+    "resource": "api://reliancecompanycommunicator.azurefd.net"
+  }
+}
